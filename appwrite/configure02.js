@@ -129,8 +129,10 @@ export class Service {
     }
 }
 
+
 const authService = new Service();
 
 
 export default authService
+
 
