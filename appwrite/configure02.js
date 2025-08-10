@@ -52,6 +52,7 @@ export class Service {
             console.log(error);
         }
     }
+    
 
     async deletePost({ slug }) {
         try {
@@ -132,3 +133,4 @@ const authService = new Service();
 
 
 export default authService
+
