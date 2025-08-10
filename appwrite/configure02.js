@@ -34,8 +34,6 @@ export class Service {
             console.log(console.error)
         }
     }
-    
-
     async updatePost(slug, { title, content, featuredImage, status }) {
         try {
             return await this.Databases.updateDocument(
@@ -135,6 +133,7 @@ const authService = new Service();
 
 
 export default authService
+
 
 
 
