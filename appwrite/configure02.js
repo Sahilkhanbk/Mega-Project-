@@ -2,6 +2,7 @@
 import configure from "../configure/configure";
 import { Client, Databases, Storage, Query, ID } from 'appwrite'
 
+
 export class Service {
     Client = new Client();
     Databases;
@@ -134,5 +135,6 @@ const authService = new Service();
 
 
 export default authService
+
 
 
