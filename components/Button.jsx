@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Button(
     { Children, type = "text", bgColor = "bg-blue-500", textColor = "text-White", className = "", ...props }) {
     return (
@@ -12,3 +13,4 @@ function Button(
 }
 
 export default Button
+
