@@ -24,12 +24,10 @@ function Login() {
                 navigate("/")
             }
 
-
         } catch (error) {
             setError(error.message)
         }
     }
-
     return (
         <div className='flex item-center justify-center w-full '>
             <div className={`mx-auto w-full max-w-lg bg-gray-200 rounded-xl p-10  border border-black/10 `}>
@@ -57,6 +55,7 @@ function Login() {
 
                 <form onSubmit={handleSubmit(login)} className='mt-8'>
                     <div className='space-y-5 '>
+                        
                         <Input
                             label="Email: "
                             placeholder="Enter your email"
@@ -94,3 +93,4 @@ function Login() {
 }
 
 export default Login
+
