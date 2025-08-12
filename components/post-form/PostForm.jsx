@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useForm } from 'react-hook-form'
 
+
 function PostForm({ post }) {
     const { register, handleSubmit, watch, setValue, control, getValue } = useForm({
         defaultValues: {
@@ -16,6 +17,7 @@ function PostForm({ post }) {
         },
     })
 
+    
     const navigate = useNavigate()
     const userData = useSelector(state => state.user.userData)
 
@@ -127,3 +129,4 @@ function PostForm({ post }) {
 }
 
 export default PostForm
+
