@@ -35,6 +35,7 @@ function PostForm({ post }) {
             if (dbPost) {
                 navigate(`/post/${dbPost.$id}`)
             }
+            
         } else {
             const file = await appwriteService.uploadFile(data.image[0]);
 
@@ -129,4 +130,5 @@ function PostForm({ post }) {
 }
 
 export default PostForm
+
 
