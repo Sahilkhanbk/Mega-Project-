@@ -7,6 +7,7 @@ export class Service {
     databases;
     bucket;
 
+    
     constructor() {
         this.client
             .setEndpoint(conf.appwriteUrl)
@@ -142,6 +143,7 @@ export class Service {
 
 const service = new Service()
 export default service
+
 
 
 
