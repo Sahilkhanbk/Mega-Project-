@@ -72,6 +72,7 @@ export class Service {
         } catch (error) {
             console.log("Appwrite serive :: deletePost :: error", error);
             return false
+            
         }
     }
 
@@ -143,6 +144,7 @@ export class Service {
 
 const service = new Service()
 export default service
+
 
 
 
